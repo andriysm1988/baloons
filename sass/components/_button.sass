@@ -15,6 +15,7 @@
     animation-timing-function: linear
     animation-delay: 2.5s
     animation-fill-mode: backwards
+    border: none
     &:active
         transform: translateY(-2rem)
     &:hover
@@ -33,3 +34,10 @@
         border-radius: 5rem
         z-index: -1
         transition: all .6s ease
+
+.btn-brown
+    background: $color-dark-brown
+    color: $color-white
+    &:hover
+    &::after
+        background: $color-dark-brown
