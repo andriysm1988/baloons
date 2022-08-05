@@ -1,5 +1,5 @@
 .card-tour
-    min-height: 52rem
+    height: 60rem
     position: relative
     cursor: pointer
     perspective: 150rem
@@ -39,6 +39,8 @@
             background: $color-light-brown url(../images/card-1.jpg) center / cover no-repeat
         &_3
             background: $color-light-brown url(../images/card-3.jpg) center / cover no-repeat
+        @include respond(tab-port)
+            height: 32rem
 
     &__title
         font-weight: 300
@@ -52,12 +54,17 @@
         position: absolute
         top: 17rem
         right: 0
+        @include respond(tab-port)
+            top: 27rem
+            font-size: 3.8rem
     &__descr
         ul
             list-style: none
             width: 75%
             margin: 0 auto
             text-align: center
+            @include respond(tab-port)
+                margin-top: 7rem
             li
                 font-size: 1.6rem
                 color: $color-gray
@@ -67,8 +74,12 @@
                 border-bottom: 1px solid $color-gray
                 @include respond(tab-land)
                     font-size: 1.5rem
+                @include respond(tab-port)
+                    font-size: 2rem
                 &:not(:last-child)
                     margin-bottom: 2rem
+                    @include respond(tab-port)
+                        margin-bottom: 2.5rem
 
     &__span
         background: linear-gradient(90deg, $color-light-brown, $color-dark-brown)
@@ -80,6 +91,8 @@
             right: 0rem
             padding-bottom: 1rem
             padding-top: .3rem
+            @include respond(tab-port)
+                top: 4rem
 
     &__backSide-box
         position: absolute
