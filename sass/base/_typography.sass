@@ -44,6 +44,9 @@ body
     transition: all .4s
     text-align: center
     backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
+
     &--color
         color: $color-white
     &:hover
@@ -56,9 +59,13 @@ body
     line-height: 2.4rem
     letter-spacing: .2rem
     text-transform: uppercase
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .paragraph
     font-size: $font-size-paragraph
     line-height: 140%
     letter-spacing: .2rem
     font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem

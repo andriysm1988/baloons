@@ -5,7 +5,7 @@
     border-radius: .5rem
 
 .form
-    width: 60%
+    width: 70%
     padding-top: 5rem
     margin-left: 5rem
 
@@ -20,6 +20,8 @@
 
     &-group:not(:last-child)
         margin-bottom: 2rem
+        @include respond(tab-land)
+            margin-bottom: 0rem
 
     &-group-radio:nth-child(4)
         margin-bottom: 4rem
@@ -47,8 +49,13 @@
         &:focus:invalid
             border-bottom: .3rem solid #D76363
     &-group-radio
-        width: 40%
         display: inline-block
+        &:not(:last-child)
+            margin-right: 2rem
+        @include respond(tab-land)
+            display: block
+        @include respond(tab-land)
+            margin-bottom: 4rem
 
     &-input-radio
         display: none

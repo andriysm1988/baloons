@@ -16,6 +16,8 @@
     animation-delay: 2.5s
     animation-fill-mode: backwards
     border: none
+    @include respond(tab-land)
+        font-size: 1.5rem
     &:active
         transform: translateY(-2rem)
     &:hover
